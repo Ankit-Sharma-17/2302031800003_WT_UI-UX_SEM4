@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriAI Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="menu" id="menu"> <br><br>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#bmi">BMI Calculator</a>
+        <a href="#calories">Calorie Tracker</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="menu-button" onclick="toggleMenu()">☰ Menu</div>
+    
+    <header class="bg-green-600 text-white p-6 text-center shadow-md animate-fadeIn">
+        <h1 class="text-4xl font-bold">NutriAI Planner</h1>
+        <p class="text-lg">Your AI-based personalized nutrition assistant</p>
+    </header>
+
+    <section id="home" class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold text-center text-green-600">Get Your Personalized Meal Plan</h2>
+        <p class="text-center text-gray-600 mt-2">Enter your details below to generate a custom diet plan.</p>
+        
+        <form id="mealForm" class="mt-6">
+            <label class="block font-semibold">Dietary Preference:</label>
+            <select id="diet" class="w-full p-2 border rounded-md mt-1">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="keto">Keto</option>
+                <option value="balanced">Balanced</option>
+            </select>
+
+           
+<create_file>
+<path></path>
+<content>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriAI Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="menu" id="menu"> <br><br>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#bmi">BMI Calculator</a>
+        <a href="#calories">Calorie Tracker</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="menu-button" onclick="toggleMenu()">☰ Menu</div>
+
+  <!-- Fixed Toolbar -->
+  <header class="bg-green-600 text-white p-6 text-center shadow-md animate-fadeIn">
+    <div class="toolbar">
+      <div class="logo">NutriAI Planner</div>
+      <button class="get-started-btn">Get Started Today!</button>
+    </div>
+  </header>
+
+  <!-- Hero Section (Top Image Slider) -->
+  <section id="hero">
+      <div class="slider-container">
+        <div class="slider">
+          <img src="https://t3.ftcdn.net/jpg/02/48/92/96/360_F_248929619_JkVBYroM1rSrshWJemrcjriggudHMUhV.jpg" alt="Healthy Food 1">
+          <div class="caption">Healthy Food 1</div>
+
+          <img src="https://www.onemedical.com/media/images/heart-healthy-food.original.jpg" alt="Healthy Food 2">
+          <div class="caption">Healthy Food 2</div>
+
+          <img src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1284690585/image_1284690585.jpg?io=getty-c-crop-4-3" alt="Healthy Food 3">
+          <div class="caption">Healthy Food 3</div>
+
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1>Discover personalized meal plans tailored to your dietary needs and preferences.</h1>
+        <p>Join our community to share your experiences and tips on nutrition and wellness.</p>
+        <button class="get-started-btn">Get Started Today!</button>
+      </div>
+  </section>
+
+  <!-- Meal Plan Generator Section -->
+  <section id="home" class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <h2 class="text-3xl font-bold text-center text-green-600">Get Your Personalized Meal Plan</h2>
+    <p class="text-center text-gray-600 mt-2">Enter your details below to generate a custom diet plan.</p>
+    
+    <form id="mealForm" class="mt-6">
+        <label class="block font-semibold">Dietary Preference:</label>
+        <select id="diet" class="w-full p-2 border rounded-md mt-1">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="keto">Keto</option>
+            <option value="balanced">Balanced</option>
+        </select>
+
+        <label class="block font-semibold mt-4">Health Goal:</label>
+        <select id="goal" class="w-full p-2 border rounded-md mt-1">
+            <option value="weight_loss">Weight Loss</option>
+            <option value="muscle_gain">Muscle Gain</option>
+            <option value="maintenance">Maintenance</option>
+        </select>
+
+        <button type="submit" class="mt-6 w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-700">Generate Plan</button>
+    </form>
+
+    <div id="result" class="mt-6 p-4 bg-gray-50 border rounded-md hidden"></div>
+  </section>
+
+  <!-- BMI Calculator Section -->
+  <section id="bmi" class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <h2 class="text-3xl font-bold text-center text-green-600">BMI Calculator</h2>
+    <label class="block font-semibold mt-4">Height (cm):</label>
+    <input type="number" id="height" class="w-full p-2 border rounded-md mt-1">
+    <label class="block font-semibold mt-4">Weight (kg):</label>
+    <input type="number" id="weight" class="w-full p-2 border rounded-md mt-1">
+    <button onclick="calculateBMI()" class="mt-6 w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-700">Calculate BMI</button>
+    <div id="bmiResult" class="mt-4 text-center text-lg font-semibold"></div>
+  </section>
+
+  <!-- Personalized Meal Plans Section -->
+  <section id="meal-plans">
+    <h2>Transform Your Health</h2>
+    <div class="meal-plan-items">
+      <div class="meal-plan-item">
+        <img src="https://www.lummi.ai/api/pro/image/103aa70c-ed63-48e9-80b9-5a91aa44a4b6?asset=original&cb=tndqux&auto=format&w=640" alt="Personalized Meal Plans Icon">
+        <h3>Personalized Meal Plans</h3>
+        <p>Receive meal plans that cater to your specific dietary preferences and restrictions.</p>
+      </div>
+      <div class="meal-plan-item">
+        <img src="https://media.istockphoto.com/id/520691525/photo/woman-making-shopping-list-on-phone-connected-to-the-refrigerator.jpg?s=612x612&w=0&k=20&c=cnw-8So8WsrEjJS4RNc8bJjZXUWaoVOpHtV-68lMUM8=" alt="Smart Grocery Lists Icon">
+        <h3>Smart Grocery Lists</h3>
+        <p>Automatically generate grocery lists based on your meal plans for easy shopping.</p>
+      </div>
+      <div class="meal-plan-item">
+        <img src="https://cdn.prod.website-files.com/6479eab6eb2ed5e597810e9e/675a9b4c6c4cfafbcec611c2_66bc8485cb372b28c19a3f48_66bc824acac8935ab0def724_Nutrition_fig1.png" alt="Nutritional Insights Icon">
+        <h3>Nutritional Insights</h3>
+        <p>Gain insights into your nutritional intake and track your progress towards your health goals.</p>
+      </div>
+      <div class="meal-plan-item">
+        <img src="https://analyticsindiamag.com/wp-content/uploads/2018/12/AI-BASED-MEAL-PLANNER.jpg" alt="Smart Meal Planning Icon">
+        <h3>Smart Meal Planning</h3>
+        <p>Utilize AI to create meal plans that fit your lifestyle and preferences.</p>
+      </div>
+    </div>
+    <div class="today-container">
+        <img src="https://assets.lummi.ai/assets/QmXEPArn1HUnnG8u6MeAchVjPUgZXSjEEuHVNkvWZJcgHd?auto=format&w=640" alt="meal today" width="300" height="200">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/daily-meal-planner-design-template-b61bfea465eca584cda75cb1b8196648_screen.jpg?ts=1738572418" alt="meal today" width="300" height="200">
+        <img src="https://i.pinimg.com/736x/3d/d8/ce/3dd8cef9649d68fd9ec601be33a40013.jpg" alt="meal today" width="300" height="200">
+
+        <div class="meal-button">
+            <p>Meal Planiner Today</p>
+            <p>Lunch Dinner</p>
+            <button>View Recipe</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Sign-Up Section -->
+  <section id="sign-up">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="email" id="email" placeholder="Your Email Address" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+      <p>By continuing you agree to our Terms of Service and Privacy Policy</p>
+      <button type="button" class="google-btn">Continue with Google</button>
+      <button type="button" class="email-btn">Continue with Email</button>
+    </form>
+  </section>
+
+  <!-- Diverse Recipe Options Section -->
+  <section id="recipe-options">
+    <h2>Diverse Recipe Options</h2>
+    <p>Explore a wide range of recipes that cater to various dietary needs.</p>
+    <div class="recipe-images">
+      <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/d670db6e-2a6c-4fcd-b55f-f9dccdba2f09/042f24c6-76f8-47ab-9267-0d9b319952c7.png" alt="Recipe 1">
+    </div>
+    <div>
+        <h2>Transform Your Eating Habits</h2>
+        <p>Achieve your health goals with customized meal plans.</p>
+    </div>
+    <div class="steps">
+        <div class="step">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGaHSONL7mlUuqsGNKFY0JVkO689TsrjbLxA&s" alt="Recipe 1">
+            <p>Step 1: Sign Up</p>
+            <p>Create your account to access personalized meal planning.</p>
+        </div>
+        <div class="step">
+            <img src="https://mma.prnewswire.com/media/1345899/Allset_Dietary_Preferences.jpg?p=twitter" alt="Recipe 2">
+            <p>Step 2: Set Preferences</p>
+            <p>Input your dietary preferences and health goals.</p>
+        </div>
+        <div class="step">
+            <img src="https://media.istockphoto.com/id/876656394/photo/healthy-food-concept-fresh-vegetables-fruits-meat-and-fish-on-wooden-table-healthy-eating-and.jpg?s=612x612&w=0&k=20&c=N_LMUgJcADQrhZUnHSJmF1TueaZ2_5scc6ArQxZsxho=" alt="Recipe 3">
+            <p>Step 3: Get Meal Plans</p>
+            <p>Receive tailored meal plans generated by our AI.</p>
+        </div>
+        <div class="step">
+            <img src="https://media.istockphoto.com/id/2093871255/photo/close-up-of-womans-hands-slicing-fresh-organic-carrots-on-kitchen-counter.webp?b=1&s=612x612&w=0&k=20&c=lVWEqjA3APVvyI8oHKp84gWTXXJHII1kcD_go3v46Bo=" alt="Recipe 4">
+            <p>Step 4: Start Cooking</p>
+            <p>Enjoy cooking and eating meals designed just for you.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Pricing Plans</h2>
+    <p>Discover our affordable pricing options for personalized nutrition.</p>
+    <div class="pricing-plans">
+      <div class="pricing-plan">
+        <h3>Basic Plan</h3>
+        <p>Kickstart your health journey with our basic features.</p>
+        <ul>
+          <li>5 GB Cloud Storage</li>
+          <li>Priority Support</li>
+          <li>Access to Community Forums</li>
+        </ul>
+        <p class="price">FREE</p>
+        <button class="join-now-btn">Join Now</button>
+      </div>
+      <div class="pricing-plan premium">
+        <h3>Premium Plan</h3>
+        <p>Unlock advanced features for a comprehensive experience.</p>
+        <ul>
+          <li>Unlimited Recipe Access</li>
+          <li>Personalized Nutrition Insights</li>Advanced Tracking Tools</li>
+        </ul>
+        <p class="price">$14.99/month</p>
+        <button class="try-premium-btn">Try Premium</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonial">
+          <img src="https://img.freepik.com/premium-photo/man-png-element-transparent-background_53876-957607.jpg" alt="User 1">
+          <p>"This planner changed my eating habits for the better!"</p>
+          <p class="author">Jane Doe</p>
+          <p class="stars">★★★★★</p>
+        </div>
+         <div class="testimonial">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkny9A2w--AZTnQLBTK6NorT4syplXv3JBMgvOTTEYUPTOlWOJjWZp-3ENUpiBh6mY1f0&usqp=CAU" alt="User 2">
+          <p>"The AI really understands my dietary needs."</p>
+          <p class="author">John Smith</p>
+          <p class="stars">★★★★★</p>
+        </div>
+        <div class="testimonial">
+          <img src="https://cdn.vanderbilt.edu/vu-web/owen/files/people-3500-Emily2-20241028152557.png" alt="User 3">
+          <p>"I love the variety of recipes available!"</p>
+          <p class="author">Emily Johnson</p>
+          <p class="stars">★★★★★</p>
+        </div>
+         <div class="testimonial">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Michael_D._Brown%2C_official_FEMA_photo_portrait%2C_2003.jpg" alt="User 4">
+          <p>"A game changer for meal planning!"</p>
+          <p class="author">Michael Brown</p>
+          <p class="stars">★★★★★</p>
+        </div>
+         <div class="testimonial">
+          <img src="https://wooster.edu/wp-content/uploads/2021/04/coach_davis-Edited-500x500.jpg" alt="User 5">
+          <p>"I feel healthier and more energized!"</p>
+          <p class="author">Sarah Davis</p>
+          <p class="stars">★★★★★</p>
+        </div>
+        <div class="testimonial">
+          <img src="https://rebootequality.org/wp-content/uploads/2022/03/chriswilson.png" alt="User 6">
+          <p>"The community support is amazing!"</p>
+          <p class="author">Chris Wilson</p>
+          <p class="stars">★★★★★</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 NutriAI Planner. All rights reserved.</p>
+    <p>Contact: info@nutriaiplanner.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
